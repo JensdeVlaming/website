@@ -1,0 +1,63 @@
+.inputToggle[type=checkbox]{
+  height: 0;
+  width: 0;
+  visibility: hidden;
+  display: none;
+}
+
+.labelToggle {
+  cursor: pointer;
+  text-indent: -999px;
+  width: 50px;
+  height: 25px;
+  background: grey;
+  display: block;
+  border-radius: 100px;
+  position: fixed;
+  margin: 10px;
+}
+
+.labelToggle:after {
+  content: '';
+  position: absolute;
+  top: 1.25px;
+  left: 1.25px;
+  width: 22.5px;
+  height: 22.5px;
+  background: #fff;
+  border-radius: 90px;
+  transition: 0.7s;
+}
+
+.inputToggle:checked + .labelToggle {
+  background: #bada55;
+}
+
+.inputToggle:checked + .labelToggle:after {
+  left: calc(100% - 2px);
+  transform: translateX(-100%);
+}
+
+.labelToggle:active:after {
+  width: 30px;
+}
+
+.toggle-container span{
+    position: absolute;
+    font-weight: bolder;
+    color: var(--text);
+    display: flex;
+    left: 70px;
+    top: 12px;
+    font-size: 16px;
+}
+
+.toggle-container span{
+  position: absolute;
+  font-weight: bolder;
+  color: var(--text);
+  display: flex;
+  left: 70px;
+  top: 12px;
+  font-size: 16px;
+}

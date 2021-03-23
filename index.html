@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="toggle.css">
+    <title>Jensdevlaming.nl</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="toggle-container">
+        <input type="checkbox" id="switch" class="inputToggle" name="theme" /><label class="labelToggle" for="switch">Toggle</label>
+        <span style="position: fixed;" class="toggleText">Dark</span>
+    </div>
+
+    <div class="home" id="home">
+        <img style="position: relative; border-radius: 50px; height: 50px; width: 50px; zoom: 2;" src="src/PF.jpg" class="profile">
+        <h1 class="header">Hi, I'm <span class="header headerBox">Jens de Vlaming</span>.</h1>
+    </div>
+
+    <div class="navBarSection">
+        <ul class="navBar">
+            <li><a class="navText" href="#home">Home</a></li>
+            <li><a class="navText" href="#about">About Me</a></li>
+            <li><a class="navText" href="#projects">Projects</a></li>
+            <li><a class="navText" href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="about" id="about">
+        <h1 class="title">About Me</h1>
+        <div class="aboutContainer">
+            <div class="column">
+                <h2>Who am I</h2>
+                <p>I'm Jens, a starting web developer from The Netherlands.<br>
+                    I have great urge for problem solving related to coding.<br><br>
+                    Check out my <a style="text-decoration: none; color: rgb(255, 101, 101);" href="https://github.com/JensdeVlaming">github</a>, what I've <a style="text-decoration: none; color: rgb(255, 101, 101);" href="#projects">done</a> or get in <a style="text-decoration: none; color: rgb(255, 101, 101);" href="#contact">touch</a> with me!
+                </p>
+
+                <div class="socials">
+                    <a href="https://github.com/JensdeVlaming" target="_blank"><img src="src/Socials/Github-dark.png"></a>
+                    <a href="https://www.instagram.com/JensdeVlaming/" target="_blank"><img style="display: none" src="src/Socials/Instagram-dark.png"></a>
+                    <a href="https://www.facebook.com/profile.php?id=100014486057118" target="_blank"><img style="display: none" src="src/Socials/Facebook-dark.png"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="projects" id="projects">
+        <h1 class="title">Projects</h1>
+        <div style="display: flex; justify-content: center; margin-top: 20px;" class="projectsContainer">
+        </div>
+    </div>
+
+    <div class="contact" id="contact">
+        <h1 class="title">Contact</h1>
+        <div class="formContainer">
+            <form action="https://formspree.io/f/xwkwwqrz" method="POST">
+                <label>
+                    <span>Your email:</span><br>
+                    <input type="text" name="_replyto" required><br>
+                </label>
+                <label>
+                    <span>Your name:</span><br>
+                    <input type="text" name="name" required><br>
+                </label>
+                <label >
+                    <span>Your message:</span><br>
+                    <textarea name="message" required></textarea>
+                </label>
+                <input type="text" name="_gotcha" style="display:none"/><br>
+
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="toggle.js"></script>
+    <script src="smoothScroll.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
